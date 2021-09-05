@@ -6,10 +6,6 @@ export default class StoreApi {
     return store.getters['getState'];
   }
 
-  public static setSelectedPage(value: string) {
-    this.setItem('management.selectedPage', value);
-  }
-
   //  General
 
   /**
