@@ -34,7 +34,7 @@
       style="height: 100%; width: 100%; flex-wrap: nowrap"
     >
       <v-card class="flex-grow-1 flex-shrink-0">
-        <v-jsoneditor v-model="json" :options="optionsPanelB" :plus="false" height="100%" />
+        <v-jsoneditor v-model="json" :options="optionsPanelC" :plus="false" height="100%" />
       </v-card>
     </v-row>
   </v-container>
@@ -56,6 +56,7 @@ export default Vue.extend({
     chosenFile: undefined! as Blob,
     optionsPanelA: {mode: 'code', theme: 'ace/theme/twilight'},
     optionsPanelB: {modes: ['code', 'tree'], mode: 'tree', theme: 'ace/theme/twilight'},
+    optionsPanelC: {modes: ['code', 'tree'], mode: 'code', theme: 'ace/theme/twilight'},
     json: {
       offline: true,
     },
@@ -126,57 +127,57 @@ export default Vue.extend({
 <style >
 /* dark styling of the editor */
 .jsoneditor-statusbar {
-  color: #ffffff;
-  background-color: #232323;
-  border-top: 1px solid #666666;
+  color: #ffffff !important;
+  background-color: #232323 !important;
+  border-top: 1px solid #666666 !important;
 }
 
 .jsoneditor-menu a.jsoneditor-poweredBy {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .jsoneditor-navigation-bar {
-  color: #ffffff;
-  background-color: #232323;
-  border-bottom: 1px solid #666666;
+  color: #ffffff !important;
+  background-color: #232323 !important;
+  border-bottom: 1px solid #666666 !important;
 }
 
 .jsoneditor-search .jsoneditor-frame {
-  background-color: transparent;
-  border: 1px solid #666666;
+  background-color: transparent !important;
+  border: 1px solid #666666 !important;
 }
 
 .jsoneditor-search input {
   padding-top: 3px !important;
   border: 0px !important;
-  color: #fffdfd;
+  color: #fffdfd !important;
 }
 
 div.jsoneditor,
 div.jsoneditor-menu {
-  border-color: #666666;
+  border-color: #666666 !important;
 }
 div.jsoneditor-menu {
-  background-color: var(--v-explorerBackground-base);
+  background-color: var(--v-explorerBackground-base) !important;
 }
 div.jsoneditor-tree,
 div.jsoneditor textarea.jsoneditor-text {
-  background-color: #1d1f21;
-  color: #ffffff;
-  overflow: auto;
+  background-color: #1d1f21 !important;
+  color: #ffffff !important;
+  overflow: auto !important;
 }
 div.jsoneditor-field,
 div.jsoneditor-value {
-  color: #ffffff;
-  word-break: break-word;
+  color: #ffffff !important;
+  word-break: break-word !important;
 }
 table.jsoneditor-search div.jsoneditor-frame {
-  background: #808080;
+  background: #808080 !important;
 }
 
 tr.jsoneditor-highlight,
 tr.jsoneditor-selected {
-  background-color: #808080;
+  background-color: #808080 !important;
 }
 
 div.jsoneditor-field[contenteditable='true']:focus,
@@ -185,8 +186,8 @@ div.jsoneditor-value[contenteditable='true']:focus,
 div.jsoneditor-value[contenteditable='true']:hover,
 div.jsoneditor-field.jsoneditor-highlight,
 div.jsoneditor-value.jsoneditor-highlight {
-  background-color: #808080;
-  border-color: #808080;
+  background-color: #808080 !important;
+  border-color: #808080 !important;
 }
 
 div.jsoneditor-field.highlight-active,
@@ -195,38 +196,38 @@ div.jsoneditor-field.highlight-active:hover,
 div.jsoneditor-value.highlight-active,
 div.jsoneditor-value.highlight-active:focus,
 div.jsoneditor-value.highlight-active:hover {
-  background-color: #b1b1b1;
-  border-color: #b1b1b1;
+  background-color: #b1b1b1 !important;
+  border-color: #b1b1b1 !important;
 }
 
 div.jsoneditor-tree button:focus {
-  background-color: #868686;
+  background-color: #868686 !important;
 }
 
 /* coloring of JSON in tree mode */
 div.jsoneditor-readonly {
-  color: #fff9f9;
+  color: #fff9f9 !important;
 }
 div.jsoneditor td.jsoneditor-separator {
-  color: #acacac;
+  color: #acacac !important;
 }
 div.jsoneditor-value.jsoneditor-string {
-  color: #00ff88;
+  color: #00ff88 !important;
 }
 div.jsoneditor-value.jsoneditor-object,
 div.jsoneditor-value.jsoneditor-array {
-  color: #bababa;
+  color: #bababa !important;
 }
 div.jsoneditor-value.jsoneditor-number {
-  color: #ff4040;
+  color: #ff4040 !important;
 }
 div.jsoneditor-value.jsoneditor-boolean {
-  color: #ff8048;
+  color: #ff8048 !important;
 }
 div.jsoneditor-value.jsoneditor-null {
-  color: #49a7fc;
+  color: #49a7fc !important;
 }
 div.jsoneditor-value.jsoneditor-invalid {
-  color: white;
+  color: white !important;
 }
 </style>

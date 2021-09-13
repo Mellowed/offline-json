@@ -1,6 +1,6 @@
 {
-  "name": "offline-json-viewer",
-  "version": "0.0.1",
+  "name": "offline-json",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service build --mode development --watch",
